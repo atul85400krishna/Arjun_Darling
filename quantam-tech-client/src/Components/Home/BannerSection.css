@@ -1,0 +1,115 @@
+.banner-photo{
+background-image: url("/gradient-green-blue-violet.jpg");
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+object-fit: cover;
+
+}
+
+/* slider */
+.slick-slider {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    user-select: none;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+    max-width: 800px; /* Set max-width for the slider */
+    margin: 0 auto; /* Center the slider horizontally */
+  }
+  
+  .slick-list {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .slick-list:focus {
+    outline: none;
+  }
+  
+  .slick-list.dragging {
+    cursor: pointer;
+    cursor: hand;
+  }
+  
+  .slick-slider .slick-track,
+  .slick-slider .slick-list {
+    transform: translate3d(0, 0, 0);
+  }
+  
+  .slick-track {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+  }
+  
+  .slick-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Set a fixed height for each slide */
+    width: 100%; /* Set a fixed width for each slide */
+    margin: 0px; /* Decrease the margin between slides */
+    padding: 10px;
+  }
+  
+  .slick-slide img {
+    object-fit: cover; /* Scale the image to cover the entire slide */
+    height: 200px;
+    width: 220px;
+    border-radius: 10px;
+  }
+  
+  .slider-title {
+    color: rgb(255, 255, 255);
+    font-size: 65px;
+    font-weight: 900;
+    text-shadow: 4px 6px 0 rgb(108, 4, 4);
+  }
+ 
+
+
+  /* ===================================================================================================================================\
+                                                    DANGER!!! RESPONSIVE AREA 
+  ======================================================================================================================================*/
+  @media only screen and (max-width: 600px) {
+    .banners {
+      margin: 0;
+    }
+    .text-banner {
+      font-size: 25px;
+      text-align: center;
+      margin: 0 auto;
+    }
+    img {
+      width: 80%;
+      display: block;
+      margin: 0 auto;
+    }
+    .slider-title {
+      color: rgb(255, 255, 255);
+      font-size: 25px;
+      font-weight: 900;
+      text-shadow: 4px 6px 0 rgb(80, 20, 20);
+    }
+    .main-services-title {
+      font-size: 35px;
+      font-weight: 800;
+      text-shadow: 4px 2px 0 rgb(108, 4, 4);
+    }
+    .slick-slide img {
+        object-fit: cover; /* Scale the image to cover the entire slide */
+        height: 150px;
+        width: 180px;
+        border-radius: 10px;
+      }
+      .slider{
+        padding: 10px;
+      }
+  }
+  
